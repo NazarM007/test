@@ -1,0 +1,19 @@
+#estate-objects-container .content .loader {
+	display: block;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 5px solid grey;
+	border-color: grey grey grey transparent;
+	animation: circle-rotate 1.2s linear infinite;
+}
+
+@keyframes circle-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

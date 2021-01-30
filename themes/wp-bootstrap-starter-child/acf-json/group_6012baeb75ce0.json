@@ -1,0 +1,344 @@
+{
+    "key": "group_6012baeb75ce0",
+    "title": "Про объект",
+    "fields": [
+        {
+            "key": "field_6012bb0bb1feb",
+            "label": "Название дома",
+            "name": "object_name",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6012bd02b1fec",
+            "label": "Координаты местонахождения",
+            "name": "object_location",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6012bd63b1fed",
+            "label": "Количество этажей",
+            "name": "object_floors-count",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4",
+                "5": "5",
+                "6": "6",
+                "7": "7",
+                "8": "8",
+                "9": "9",
+                "10": "10",
+                "11": "11",
+                "12": "12",
+                "13": "13",
+                "14": "14",
+                "15": "15",
+                "16": "16",
+                "17": "17",
+                "18": "18",
+                "19": "19",
+                "20": "20"
+            },
+            "default_value": [
+                1
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6012bfb1b1fee",
+            "label": "Тип строения",
+            "name": "object_build-type",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Панель": "Панель",
+                "Кирпич": "Кирпич",
+                "Пеноблок": "Пеноблок"
+            },
+            "default_value": "Панель",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6012c067b1fef",
+            "label": "Экологичность",
+            "name": "object_environmental-friendliness",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4",
+                "5": "5"
+            },
+            "default_value": 1,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6012c1f6b1ff0",
+            "label": "Изображение",
+            "name": "object_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6012c3850cb57",
+            "label": "Помещения",
+            "name": "object_apartments",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Добавить помещение",
+            "sub_fields": [
+                {
+                    "key": "field_6012c5750cb58",
+                    "label": "Площадь",
+                    "name": "square",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "м²",
+                    "min": 0,
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_6012c6c60cb59",
+                    "label": "Кол.комнат",
+                    "name": "rooms-count",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "1": "1",
+                        "2": "2",
+                        "3": "3",
+                        "4": "4",
+                        "5": "5",
+                        "6": "6",
+                        "7": "7",
+                        "8": "8",
+                        "9": "9",
+                        "10": "10"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": 1,
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_6012c7ec0cb5a",
+                    "label": "Балкон",
+                    "name": "balcony",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Да": "Да",
+                        "Нет": "Нет"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "Нет",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_6012c91c0cb5b",
+                    "label": "Санузел",
+                    "name": "bathroom",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Да": "Да",
+                        "Нет": "Нет"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "Да",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_6012c9800cb5c",
+                    "label": "Изображение",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "estate-object"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "Post Type \"Объект недвижимости\"",
+    "modified": 1611923709
+}
